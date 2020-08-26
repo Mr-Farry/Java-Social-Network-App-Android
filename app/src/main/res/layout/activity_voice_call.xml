@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".VoiceCallActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reciever_name"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="."
+        />
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:id="@+id/call_controls"
+        android:layout_below="@id/reciever_name"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mic_mute_button"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mic_mute"/>
+        <ImageView
+            android:id="@+id/speaker_button"
+            android:layout_marginLeft="18dp"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_speaker"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_tv"
+        android:layout_below="@id/call_controls"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="."
+        />
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/voice_hang_button"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_voice_hang"/>
+
+
+</RelativeLayout>
+</layout>
